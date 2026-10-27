@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Generated outputs: generations, eval results, stats
+outputs/
+
+# SFT datasets built by gen_data/convert_to_sft.py (named <data>_<model>_<prompt>_t*_k*_s*_e*_<select>.json);
+# source data (math*_train/test.json) and data/dataset_info.json stay tracked
+data/*_t[0-9]*_k[0-9]*_s[0-9]*_e[0-9]*.json
+
+# Training artifacts
+saves/
+checkpoints/
+models/
+wandb/
+runs/
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+
+# Logs
+*.log
+nohup.out
+
+# Local tool settings
+.claude/settings.local.json
+.vscode/
+.idea/
+
+# OS
+.DS_Store
